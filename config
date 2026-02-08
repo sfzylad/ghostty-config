@@ -5,13 +5,27 @@
 #
 #   /Users/dzyla/Library/Application Support/com.mitchellh.ghostty/config
 #
+bell-features = border
 font-family = Fira Code
 font-size = 13
 font-feature = -calt,ss05,ss03,cv31,cv09,cv05
 window-padding-x = 2
-theme = Dark Pastel
+window-padding-balance = true
+window-save-state = always
+theme = Adventure
 macos-option-as-alt = left
 macos-titlebar-style = tabs
+macos-window-buttons = hidden
+mouse-hide-while-typing = true
 
 keybind = cmd+p=toggle_command_palette
 keybind = cmd+s=write_scrollback_file:copy
+keybind = ctrl+shift+e=text:\x1b//Users/dzyla/bin/toggle-theme\n
+
+# Quake style terminal
+keybind = global:option+backquote=toggle_quick_terminal
+
+command-palette-entry = title:"Toggle between themes",description:"Toggle between dark and light theme",action:"text:\x1b//Users/dzyla/bin/toggle-theme\n"
+
+# Set dynamic theme (if available)
+config-file = ?./dynamic-config
