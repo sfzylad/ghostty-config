@@ -1,0 +1,17 @@
+# This is the configuration file for Ghostty.
+#
+# This template file has been automatically created at the following
+# path since Ghostty couldn't find any existing config files on your system:
+#
+#   /Users/dzyla/Library/Application Support/com.mitchellh.ghostty/config
+#
+font-family = Fira Code
+font-size = 13
+font-feature = -calt,ss05,ss03,cv31,cv09,cv05
+window-padding-x = 2
+theme = Dark Pastel
+macos-option-as-alt = left
+macos-titlebar-style = tabs
+
+keybind = cmd+p=toggle_command_palette
+keybind = cmd+s=write_scrollback_file:copy
