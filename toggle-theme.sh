@@ -3,6 +3,7 @@
 readonly dynamic_theme_file="$HOME/.config/ghostty/dynamic-config"
 readonly default_theme=Adventure
 readonly alternate_theme="Apple System Colors Light"
+readonly delta_theme_file="$HOME/tmp/.theme"
 
 set_theme() {
 	echo "theme = $1" >"$dynamic_theme_file"
@@ -17,7 +18,9 @@ fi
 
 if [ "$current_theme" == "$default_theme" ]; then
 	set_theme "$alternate_theme"
+    echo '--light --syntax-theme=GitHub' > "$delta_theme_file"
 else
 	set_theme "$default_theme"
+    echo '--dark --syntax-theme=ansi' > "$delta_theme_file"
 fi
 
