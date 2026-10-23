@@ -6,9 +6,11 @@
 #   /Users/dzyla/Library/Application Support/com.mitchellh.ghostty/config
 #
 bell-features = border
-font-family = Fira Code
-font-size = 13
-font-feature = -calt,ss05,ss03,cv31,cv09,cv05
+font-family = Monoisome Regular
+#font-style = Regular
+font-size = 12
+font-feature = -calt,ss05,ss03,cv31,cv10,cv05
+#font-feature = -calt
 window-padding-x = 2
 window-padding-balance = true
 window-save-state = always
